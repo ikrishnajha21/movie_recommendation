@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+/* Search Box */
+#movieInput {
+    width: 350px;
+    padding: 15px 18px;
+
+    background: #1c1c1c;
+    color: white;
+
+    border: 1px solid #333;
+    border-radius: 10px;
+
+    outline: none;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+#movieInput:focus {
+    border-color: #777;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+
+    padding: 14px 28px;
+
+    background: white;
+    color: black;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: #e5e5e5;
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Recommendation */
+#result {
+    margin-top: 35px;
+
+    padding: 20px 30px;
+
+    min-width: 300px;
+
+    background: #181818;
+    border: 1px solid #292929;
+    border-radius: 14px;
+
+    text-align: center;
+
+    font-size: 22px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    #movieInput {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #result {
+        min-width: auto;
+        width: 100%;
+        max-width: 350px;
+    }
+}
+.movie-card {
+    margin-top: 30px;
+    padding: 25px;
+
+    width: 350px;
+
+    background: #181818;
+
+    border: 1px solid #333;
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.movie-card h2 {
+    margin-bottom: 20px;
+}
+
+.movie-card p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.movie-card {
+    margin: 15px;
+    padding: 20px;
+
+    width: 250px;
+
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 15px;
+
+    text-align: center;
+
+    display: inline-block;
+}
+
+.movie-card h3 {
+    margin-bottom: 15px;
+}
+
+.movie-card p {
+    margin: 8px 0;
+}
+.movie-card img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
