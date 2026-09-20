@@ -44,10 +44,6 @@ h1 {
 }
 
 
-/* =========================
-   SEARCH
-========================= */
-
 .search-section {
     display: flex;
 
@@ -128,9 +124,7 @@ button:active {
 }
 
 
-/* =========================
-   SUGGESTIONS
-========================= */
+
 
 #suggestions {
     max-width: 350px;
@@ -157,10 +151,6 @@ button:active {
 }
 
 
-/* =========================
-   LOADING
-========================= */
-
 #loading {
     margin-top: 25px;
 
@@ -175,9 +165,7 @@ button:active {
 }
 
 
-/* =========================
-   ERROR
-========================= */
+
 
 .error {
     margin-top: 20px;
@@ -188,9 +176,7 @@ button:active {
 }
 
 
-/* =========================
-   RESULTS
-========================= */
+
 
 #result {
     margin-top: 35px;
@@ -212,9 +198,6 @@ button:active {
 }
 
 
-/* =========================
-   MOVIE CARD
-========================= */
 
 .movie-card {
     width: 250px;
@@ -287,9 +270,7 @@ button:active {
 }
 
 
-/* =========================
-   FAVORITES
-========================= */
+
 
 .favorites-section {
     margin-top: 60px;
@@ -344,9 +325,6 @@ button:active {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 600px) {
 

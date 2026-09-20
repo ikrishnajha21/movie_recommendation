@@ -427,10 +427,6 @@ async function searchMovies(movieName) {
         }
 
 
-        // ======================================
-        // CONVERT RESPONSE TO JSON
-        // ======================================
-
         let data = await response.json();
 
         console.log("API DATA:", data);
@@ -454,7 +450,7 @@ async function searchMovies(movieName) {
 
 
         let minRating =
-            Number(ratingInput.value) || 0;
+            Number(ratingInput.value) || 0; // iski value
 
 
     
