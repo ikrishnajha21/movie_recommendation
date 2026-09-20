@@ -365,7 +365,10 @@ let savedFavorites =
 
 let favorites = savedFavorites
     ? JSON.parse(savedFavorites)
-    : [];
+    : []; //ternatory operator Is savedFavorites available?
+          //  YES → JSON.parse(savedFavorites)
+          //    ↓
+          //   NO → []
 
 
 let currentMovies = []
@@ -395,7 +398,7 @@ async function searchMovies(movieName) {
 
     
 
-        let params = new URLSearchParams({
+        let params = new URLSearchParams({ // this creates url query parameters
 
             apikey: API_KEY,
 
@@ -408,7 +411,7 @@ async function searchMovies(movieName) {
 
     
 
-        let url = `${API_URL}?${params}`;
+        let url = `${API_URL}?${params}`; // building the url 
 
         console.log("API URL:", url);
 
@@ -575,23 +578,19 @@ async function getSingleMovie(imdbID) {
         return {
 
             id: data.imdbID,
-
             name: data.Title,
-
             rating:
                 data.imdbRating === "N/A"
                     ? 0
                     : Number(data.imdbRating),
 
             genre: data.Genre,
-
             poster:
                 data.Poster === "N/A"
                     ? "https://via.placeholder.com/250x300?text=No+Poster"
                     : data.Poster,
 
             year: data.Year,
-
             plot: data.Plot
         };
 
